@@ -36,7 +36,7 @@ describe('solvers', function() {
   describe('findNQueensSolution()', function() {
 
     it('finds a valid solution for n of 0-7', function() {
-      // Skip 2 and 3 because they have no solution.
+      // Skip 2 and 3 because they have no solution. //get back to 0 and add bigger cases
       [0, 1, 4, 5, 6, 7, 8].map(function(n) {
         var solutionBoard = new Board(findNQueensSolution(n));
         var numPieces = _.reduce(solutionBoard.rows(), function(memo, row) {
